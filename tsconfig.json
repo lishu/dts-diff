@@ -1,13 +1,13 @@
 {
     "compilerOptions": {
-        "sourceMap": true,
         "allowJs": true,
         "moduleResolution": "node",
         "declaration": true,
         "target": "ES6",
         "module": "CommonJS",
         "outDir": "dist",
-        "sourceRoot": "./src/"
+        "sourceRoot": "./src/",
+        "sourceMap": true
     },
     "include": [
         "src/**/*.ts"

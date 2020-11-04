@@ -1,5 +1,6 @@
-import { createSourceFile, Node, InterfaceDeclaration, ModuleDeclaration, ScriptKind, ScriptTarget, SourceFile, SyntaxKind, SyntaxList, EnumDeclaration, ClassDeclaration, TypeAliasDeclaration, FunctionDeclaration, Declaration } from 'typescript';
+import { createSourceFile, Node, InterfaceDeclaration, ModuleDeclaration, ScriptKind, ScriptTarget, SourceFile, SyntaxKind, SyntaxList, EnumDeclaration, ClassDeclaration, TypeAliasDeclaration, FunctionDeclaration, Declaration, VariableDeclarationList, VariableDeclaration } from 'typescript';
 import { readFile } from 'fs';
+import ts = require('typescript');
 
 /** diff source info */
 export interface IDiffSource {
@@ -158,8 +159,7 @@ function handleSyntaxList(items: IItem[], s: SourceFile, mod: ModuleDeclaration,
                 handleTypeAliasDec(items, s, <TypeAliasDeclaration>child, modItem);
                 break;
             case SyntaxKind.FirstStatement:
-                // console.log(`FirstStatement: pos = ${child.pos}, end = ${child.end}`);
-                // console.log(child.getText(s));
+                handleFirstStatementDec(items, s, child, modItem);
                 break;
             default:
                 console.log('handleSyntaxList kind', child.kind);
@@ -204,6 +204,40 @@ function handleTypeAliasDec(items: IItem[], s: SourceFile, typ: TypeAliasDeclara
     const name = typ.name.getText(s);
     // console.debug('处理别名 ' + name);
     const item = findOrAppend(items, SyntaxKind.TypeAliasDeclaration, name, typ, parent);
+}
+
+function handleVariableDec(items: IItem[], s: SourceFile, varDec: VariableDeclaration, parent?: IItem) {
+    const name = varDec.name.getText(s);
+    findOrAppend(items, SyntaxKind.VariableDeclaration, name, varDec, parent);
+}
+
+function handleVariableDeclarationList(items: IItem[], s: SourceFile, varDecList: VariableDeclarationList, parent?: IItem) {
+    varDecList.declarations.forEach(dec=>handleVariableDec(items, s, dec, parent));
+}
+
+function handleFirstStatementDec(items: IItem[], s: SourceFile, st: Node, parent?: IItem) {
+    st.forEachChild(c=>{
+        switch(c.kind) {
+            case SyntaxKind.VariableDeclarationList:
+                handleVariableDeclarationList(items, s, <VariableDeclarationList>c, parent);
+                break;
+            default:
+                console.log('c', c.kind);
+                break;
+        }
+    }, cs=>{
+        cs.forEach(c=>{
+            switch(c.kind) {
+                case SyntaxKind.ExportKeyword:
+                    // console.log(c.getFullText(s));
+                    // console.log(ts.getJSDocTags(c).map(t=>t.tagName));
+                    break;
+                default:
+                    console.log('cc', c.kind);
+                    break;
+            }
+        });
+    });
 }
 
 function isDeprecated(s: SourceFile, d: Declaration): boolean {
@@ -336,7 +370,7 @@ export function parse(options: IDiffParserOptions, callback?: IDiffCallback) : P
                     path: d.fullname,
                     changes: [{
                         at,
-                        kind: DiffItemKind.Added
+                        kind: d.deprecated ? DiffItemKind.Deprecated : DiffItemKind.Added
                     }]
                 });
             });

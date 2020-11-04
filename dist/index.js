@@ -89,8 +89,7 @@ function handleSyntaxList(items, s, mod, modItem, syntaxList) {
                 handleTypeAliasDec(items, s, child, modItem);
                 break;
             case typescript_1.SyntaxKind.FirstStatement:
-                // console.log(`FirstStatement: pos = ${child.pos}, end = ${child.end}`);
-                // console.log(child.getText(s));
+                handleFirstStatementDec(items, s, child, modItem);
                 break;
             default:
                 console.log('handleSyntaxList kind', child.kind);
@@ -132,6 +131,37 @@ function handleTypeAliasDec(items, s, typ, parent) {
     const name = typ.name.getText(s);
     // console.debug('处理别名 ' + name);
     const item = findOrAppend(items, typescript_1.SyntaxKind.TypeAliasDeclaration, name, typ, parent);
+}
+function handleVariableDec(items, s, varDec, parent) {
+    const name = varDec.name.getText(s);
+    findOrAppend(items, typescript_1.SyntaxKind.VariableDeclaration, name, varDec, parent);
+}
+function handleVariableDeclarationList(items, s, varDecList, parent) {
+    varDecList.declarations.forEach(dec => handleVariableDec(items, s, dec, parent));
+}
+function handleFirstStatementDec(items, s, st, parent) {
+    st.forEachChild(c => {
+        switch (c.kind) {
+            case typescript_1.SyntaxKind.VariableDeclarationList:
+                handleVariableDeclarationList(items, s, c, parent);
+                break;
+            default:
+                console.log('c', c.kind);
+                break;
+        }
+    }, cs => {
+        cs.forEach(c => {
+            switch (c.kind) {
+                case typescript_1.SyntaxKind.ExportKeyword:
+                    // console.log(c.getFullText(s));
+                    // console.log(ts.getJSDocTags(c).map(t=>t.tagName));
+                    break;
+                default:
+                    console.log('cc', c.kind);
+                    break;
+            }
+        });
+    });
 }
 function isDeprecated(s, d) {
     const fullText = d.getFullText(s);
@@ -254,7 +284,7 @@ function parse(options, callback) {
                     path: d.fullname,
                     changes: [{
                             at,
-                            kind: DiffItemKind.Added
+                            kind: d.deprecated ? DiffItemKind.Deprecated : DiffItemKind.Added
                         }]
                 });
             });

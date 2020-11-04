@@ -1,9 +1,11 @@
 {
   "name": "dts-diff",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Parse two or more .d.ts file diff. A tool create api version diff info",
   "main": "dist/index.js",
   "scripts": {
+    "start": "tsc -w",
+    "debug": "node ./demo/vscode-api-diff.js -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

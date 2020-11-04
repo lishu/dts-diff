@@ -232,6 +232,18 @@
 			"from": "1.20.1",
 			"to": "1.21.0",
 			"kind": 0,
+			"path": "'vscode'.debug.breakpoints"
+		},
+		{
+			"from": "1.20.1",
+			"to": "1.21.0",
+			"kind": 0,
+			"path": "'vscode'.debug.onDidChangeBreakpoints"
+		},
+		{
+			"from": "1.20.1",
+			"to": "1.21.0",
+			"kind": 0,
 			"path": "'vscode'.debug.removeBreakpoints"
 		},
 		{
@@ -521,6 +533,12 @@
 			"to": "1.22.0",
 			"kind": 0,
 			"path": "'vscode'.window.createTreeView"
+		},
+		{
+			"from": "1.21.1",
+			"to": "1.22.0",
+			"kind": 0,
+			"path": "'vscode'.window.onDidChangeTextEditorVisibleRanges"
 		},
 		{
 			"from": "1.21.1",
@@ -874,6 +892,12 @@
 			"from": "1.22.2",
 			"to": "1.23.0",
 			"kind": 0,
+			"path": "'vscode'.languages.onDidChangeDiagnostics"
+		},
+		{
+			"from": "1.22.2",
+			"to": "1.23.0",
+			"kind": 0,
 			"path": "'vscode'.languages.registerFoldingRangeProvider"
 		},
 		{
@@ -1162,7 +1186,37 @@
 			"from": "1.23.1",
 			"to": "1.24.0",
 			"kind": 0,
+			"path": "'vscode'.tasks.onDidEndTask"
+		},
+		{
+			"from": "1.23.1",
+			"to": "1.24.0",
+			"kind": 0,
+			"path": "'vscode'.tasks.onDidEndTaskProcess"
+		},
+		{
+			"from": "1.23.1",
+			"to": "1.24.0",
+			"kind": 0,
+			"path": "'vscode'.tasks.onDidStartTask"
+		},
+		{
+			"from": "1.23.1",
+			"to": "1.24.0",
+			"kind": 0,
+			"path": "'vscode'.tasks.onDidStartTaskProcess"
+		},
+		{
+			"from": "1.23.1",
+			"to": "1.24.0",
+			"kind": 0,
 			"path": "'vscode'.tasks.registerTaskProvider"
+		},
+		{
+			"from": "1.23.1",
+			"to": "1.24.0",
+			"kind": 0,
+			"path": "'vscode'.tasks.taskExecutions"
 		},
 		{
 			"from": "1.23.1",
@@ -1708,7 +1762,19 @@
 			"from": "1.25.1",
 			"to": "1.26.0",
 			"kind": 0,
+			"path": "'vscode'.window.onDidOpenTerminal"
+		},
+		{
+			"from": "1.25.1",
+			"to": "1.26.0",
+			"kind": 0,
 			"path": "'vscode'.window.registerUriHandler"
+		},
+		{
+			"from": "1.25.1",
+			"to": "1.26.0",
+			"kind": 0,
+			"path": "'vscode'.window.terminals"
 		},
 		{
 			"from": "1.25.1",
@@ -1745,6 +1811,18 @@
 			"to": "1.29.0",
 			"kind": 0,
 			"path": "'vscode'.QuickPickItem.alwaysShow"
+		},
+		{
+			"from": "1.28.2",
+			"to": "1.29.0",
+			"kind": 0,
+			"path": "'vscode'.window.activeTerminal"
+		},
+		{
+			"from": "1.28.2",
+			"to": "1.29.0",
+			"kind": 0,
+			"path": "'vscode'.window.onDidChangeActiveTerminal"
 		},
 		{
 			"from": "1.29.1",
@@ -1978,6 +2056,12 @@
 			"from": "1.29.1",
 			"to": "1.30.0",
 			"kind": 0,
+			"path": "'vscode'.env.clipboard"
+		},
+		{
+			"from": "1.29.1",
+			"to": "1.30.0",
+			"kind": 0,
 			"path": "'vscode'.languages.registerDeclarationProvider"
 		},
 		{
@@ -2194,6 +2278,12 @@
 			"from": "1.30.2",
 			"to": "1.31.0",
 			"kind": 0,
+			"path": "'vscode'.extensions.onDidChange"
+		},
+		{
+			"from": "1.30.2",
+			"to": "1.31.0",
+			"kind": 0,
 			"path": "'vscode'.TerminalOptions.strictEnv"
 		},
 		{
@@ -2255,6 +2345,12 @@
 			"to": "1.33.0",
 			"kind": 0,
 			"path": "'vscode'.SelectionRangeProvider.provideSelectionRanges"
+		},
+		{
+			"from": "1.33.1",
+			"to": "1.34.0",
+			"kind": 0,
+			"path": "'vscode'.env.uriScheme"
 		},
 		{
 			"from": "1.33.1",
@@ -2548,6 +2644,12 @@
 			"from": "1.35.1",
 			"to": "1.36.0",
 			"kind": 0,
+			"path": "'vscode'.env.remoteName"
+		},
+		{
+			"from": "1.35.1",
+			"to": "1.36.0",
+			"kind": 0,
 			"path": "'vscode'.Extension.extensionKind"
 		},
 		{
@@ -2579,6 +2681,12 @@
 			"to": "1.37.0",
 			"kind": 0,
 			"path": "'vscode'.DiagnosticTag.Deprecated"
+		},
+		{
+			"from": "1.36.1",
+			"to": "1.37.0",
+			"kind": 0,
+			"path": "'vscode'.env.shell"
 		},
 		{
 			"from": "1.36.1",
@@ -2633,6 +2741,18 @@
 			"to": "1.37.0",
 			"kind": 0,
 			"path": "'vscode'.FileSystem.writeFile"
+		},
+		{
+			"from": "1.36.1",
+			"to": "1.37.0",
+			"kind": 0,
+			"path": "'vscode'.workspace.fs"
+		},
+		{
+			"from": "1.36.1",
+			"to": "1.37.0",
+			"kind": 0,
+			"path": "'vscode'.workspace.workspaceFile"
 		},
 		{
 			"from": "1.37.1",
@@ -2968,6 +3088,12 @@
 			"from": "1.39.2",
 			"to": "1.40.0",
 			"kind": 0,
+			"path": "'vscode'.env.uiKind"
+		},
+		{
+			"from": "1.39.2",
+			"to": "1.40.0",
+			"kind": 0,
 			"path": "'vscode'.languages.registerCallHierarchyProvider"
 		},
 		{
@@ -3113,6 +3239,42 @@
 			"to": "1.41.0",
 			"kind": 0,
 			"path": "'vscode'.TreeView.title"
+		},
+		{
+			"from": "1.40.2",
+			"to": "1.41.0",
+			"kind": 0,
+			"path": "'vscode'.workspace.onDidCreateFiles"
+		},
+		{
+			"from": "1.40.2",
+			"to": "1.41.0",
+			"kind": 0,
+			"path": "'vscode'.workspace.onDidDeleteFiles"
+		},
+		{
+			"from": "1.40.2",
+			"to": "1.41.0",
+			"kind": 0,
+			"path": "'vscode'.workspace.onDidRenameFiles"
+		},
+		{
+			"from": "1.40.2",
+			"to": "1.41.0",
+			"kind": 0,
+			"path": "'vscode'.workspace.onWillCreateFiles"
+		},
+		{
+			"from": "1.40.2",
+			"to": "1.41.0",
+			"kind": 0,
+			"path": "'vscode'.workspace.onWillDeleteFiles"
+		},
+		{
+			"from": "1.40.2",
+			"to": "1.41.0",
+			"kind": 0,
+			"path": "'vscode'.workspace.onWillRenameFiles"
 		},
 		{
 			"from": "1.41.1",
@@ -3565,6 +3727,18 @@
 			"path": "'vscode'.Uri.joinPath"
 		},
 		{
+			"from": "1.44.2",
+			"to": "1.45.0",
+			"kind": 0,
+			"path": "'vscode'.window.activeColorTheme"
+		},
+		{
+			"from": "1.44.2",
+			"to": "1.45.0",
+			"kind": 0,
+			"path": "'vscode'.window.onDidChangeActiveColorTheme"
+		},
+		{
 			"from": "1.45.1",
 			"to": "1.46.0",
 			"kind": 0,
@@ -3971,6 +4145,12 @@
 			"to": "1.48.0",
 			"kind": 0,
 			"path": "'vscode'.authentication.getSession"
+		},
+		{
+			"from": "1.47.3",
+			"to": "1.48.0",
+			"kind": 0,
+			"path": "'vscode'.authentication.onDidChangeSessions"
 		},
 		{
 			"from": "1.47.3",
@@ -4921,7 +5101,7 @@
 			"changes": [
 				{
 					"at": "1.19.1",
-					"kind": 0
+					"kind": 3
 				}
 			]
 		},
@@ -5309,6 +5489,60 @@
 		},
 		{
 			"path": "'vscode'.debug",
+			"changes": [
+				{
+					"at": "1.19.1",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.debug.activeDebugConsole",
+			"changes": [
+				{
+					"at": "1.19.1",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.debug.activeDebugSession",
+			"changes": [
+				{
+					"at": "1.19.1",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.debug.onDidChangeActiveDebugSession",
+			"changes": [
+				{
+					"at": "1.19.1",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.debug.onDidReceiveDebugSessionCustomEvent",
+			"changes": [
+				{
+					"at": "1.19.1",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.debug.onDidStartDebugSession",
+			"changes": [
+				{
+					"at": "1.19.1",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.debug.onDidTerminateDebugSession",
 			"changes": [
 				{
 					"at": "1.19.1",
@@ -6280,6 +6514,51 @@
 			]
 		},
 		{
+			"path": "'vscode'.env.appName",
+			"changes": [
+				{
+					"at": "1.19.1",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.env.appRoot",
+			"changes": [
+				{
+					"at": "1.19.1",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.env.language",
+			"changes": [
+				{
+					"at": "1.19.1",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.env.machineId",
+			"changes": [
+				{
+					"at": "1.19.1",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.env.sessionId",
+			"changes": [
+				{
+					"at": "1.19.1",
+					"kind": 0
+				}
+			]
+		},
+		{
 			"path": "'vscode'.Event",
 			"changes": [
 				{
@@ -6465,6 +6744,15 @@
 		},
 		{
 			"path": "'vscode'.extensions",
+			"changes": [
+				{
+					"at": "1.19.1",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.extensions.all",
 			"changes": [
 				{
 					"at": "1.19.1",
@@ -6837,7 +7125,7 @@
 			"changes": [
 				{
 					"at": "1.19.1",
-					"kind": 0
+					"kind": 3
 				}
 			]
 		},
@@ -6846,7 +7134,7 @@
 			"changes": [
 				{
 					"at": "1.19.1",
-					"kind": 0
+					"kind": 3
 				}
 			]
 		},
@@ -7471,7 +7759,7 @@
 			"changes": [
 				{
 					"at": "1.19.1",
-					"kind": 0
+					"kind": 3
 				}
 			]
 		},
@@ -8183,6 +8471,15 @@
 		},
 		{
 			"path": "'vscode'.scm.createSourceControl",
+			"changes": [
+				{
+					"at": "1.19.1",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.scm.inputBox",
 			"changes": [
 				{
 					"at": "1.19.1",
@@ -10161,7 +10458,7 @@
 			"changes": [
 				{
 					"at": "1.19.1",
-					"kind": 0
+					"kind": 3
 				}
 			]
 		},
@@ -10224,7 +10521,7 @@
 			"changes": [
 				{
 					"at": "1.19.1",
-					"kind": 0
+					"kind": 3
 				}
 			]
 		},
@@ -11291,6 +11588,15 @@
 			]
 		},
 		{
+			"path": "'vscode'.version",
+			"changes": [
+				{
+					"at": "1.19.1",
+					"kind": 0
+				}
+			]
+		},
+		{
 			"path": "'vscode'.ViewColumn",
 			"changes": [
 				{
@@ -11345,6 +11651,15 @@
 			]
 		},
 		{
+			"path": "'vscode'.window.activeTextEditor",
+			"changes": [
+				{
+					"at": "1.19.1",
+					"kind": 0
+				}
+			]
+		},
+		{
 			"path": "'vscode'.window.createOutputChannel",
 			"changes": [
 				{
@@ -11373,6 +11688,69 @@
 		},
 		{
 			"path": "'vscode'.window.createTextEditorDecorationType",
+			"changes": [
+				{
+					"at": "1.19.1",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.window.onDidChangeActiveTextEditor",
+			"changes": [
+				{
+					"at": "1.19.1",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.window.onDidChangeTextEditorOptions",
+			"changes": [
+				{
+					"at": "1.19.1",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.window.onDidChangeTextEditorSelection",
+			"changes": [
+				{
+					"at": "1.19.1",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.window.onDidChangeTextEditorViewColumn",
+			"changes": [
+				{
+					"at": "1.19.1",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.window.onDidChangeVisibleTextEditors",
+			"changes": [
+				{
+					"at": "1.19.1",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.window.onDidChangeWindowState",
+			"changes": [
+				{
+					"at": "1.19.1",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.window.onDidCloseTerminal",
 			"changes": [
 				{
 					"at": "1.19.1",
@@ -11480,6 +11858,24 @@
 			]
 		},
 		{
+			"path": "'vscode'.window.state",
+			"changes": [
+				{
+					"at": "1.19.1",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.window.visibleTextEditors",
+			"changes": [
+				{
+					"at": "1.19.1",
+					"kind": 0
+				}
+			]
+		},
+		{
 			"path": "'vscode'.window.withProgress",
 			"changes": [
 				{
@@ -11579,6 +11975,78 @@
 			]
 		},
 		{
+			"path": "'vscode'.workspace.name",
+			"changes": [
+				{
+					"at": "1.19.1",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.workspace.onDidChangeConfiguration",
+			"changes": [
+				{
+					"at": "1.19.1",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.workspace.onDidChangeTextDocument",
+			"changes": [
+				{
+					"at": "1.19.1",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.workspace.onDidChangeWorkspaceFolders",
+			"changes": [
+				{
+					"at": "1.19.1",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.workspace.onDidCloseTextDocument",
+			"changes": [
+				{
+					"at": "1.19.1",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.workspace.onDidOpenTextDocument",
+			"changes": [
+				{
+					"at": "1.19.1",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.workspace.onDidSaveTextDocument",
+			"changes": [
+				{
+					"at": "1.19.1",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.workspace.onWillSaveTextDocument",
+			"changes": [
+				{
+					"at": "1.19.1",
+					"kind": 0
+				}
+			]
+		},
+		{
 			"path": "'vscode'.workspace.openTextDocument",
 			"changes": [
 				{
@@ -11606,7 +12074,34 @@
 			]
 		},
 		{
+			"path": "'vscode'.workspace.rootPath",
+			"changes": [
+				{
+					"at": "1.19.1",
+					"kind": 0
+				}
+			]
+		},
+		{
 			"path": "'vscode'.workspace.saveAll",
+			"changes": [
+				{
+					"at": "1.19.1",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.workspace.textDocuments",
+			"changes": [
+				{
+					"at": "1.19.1",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.workspace.workspaceFolders",
 			"changes": [
 				{
 					"at": "1.19.1",
@@ -12231,6 +12726,24 @@
 			]
 		},
 		{
+			"path": "'vscode'.debug.breakpoints",
+			"changes": [
+				{
+					"at": "1.21.0",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.debug.onDidChangeBreakpoints",
+			"changes": [
+				{
+					"at": "1.21.0",
+					"kind": 0
+				}
+			]
+		},
+		{
 			"path": "'vscode'.debug.removeBreakpoints",
 			"changes": [
 				{
@@ -12676,6 +13189,15 @@
 		},
 		{
 			"path": "'vscode'.window.createTreeView",
+			"changes": [
+				{
+					"at": "1.22.0",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.window.onDidChangeTextEditorVisibleRanges",
 			"changes": [
 				{
 					"at": "1.22.0",
@@ -13179,6 +13701,15 @@
 			]
 		},
 		{
+			"path": "'vscode'.languages.onDidChangeDiagnostics",
+			"changes": [
+				{
+					"at": "1.23.0",
+					"kind": 0
+				}
+			]
+		},
+		{
 			"path": "'vscode'.languages.registerFoldingRangeProvider",
 			"changes": [
 				{
@@ -13611,7 +14142,52 @@
 			]
 		},
 		{
+			"path": "'vscode'.tasks.onDidEndTask",
+			"changes": [
+				{
+					"at": "1.24.0",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.tasks.onDidEndTaskProcess",
+			"changes": [
+				{
+					"at": "1.24.0",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.tasks.onDidStartTask",
+			"changes": [
+				{
+					"at": "1.24.0",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.tasks.onDidStartTaskProcess",
+			"changes": [
+				{
+					"at": "1.24.0",
+					"kind": 0
+				}
+			]
+		},
+		{
 			"path": "'vscode'.tasks.registerTaskProvider",
+			"changes": [
+				{
+					"at": "1.24.0",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.tasks.taskExecutions",
 			"changes": [
 				{
 					"at": "1.24.0",
@@ -14446,7 +15022,25 @@
 			]
 		},
 		{
+			"path": "'vscode'.window.onDidOpenTerminal",
+			"changes": [
+				{
+					"at": "1.26.0",
+					"kind": 0
+				}
+			]
+		},
+		{
 			"path": "'vscode'.window.registerUriHandler",
+			"changes": [
+				{
+					"at": "1.26.0",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.window.terminals",
 			"changes": [
 				{
 					"at": "1.26.0",
@@ -14505,6 +15099,24 @@
 		},
 		{
 			"path": "'vscode'.QuickPickItem.alwaysShow",
+			"changes": [
+				{
+					"at": "1.29.0",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.window.activeTerminal",
+			"changes": [
+				{
+					"at": "1.29.0",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.window.onDidChangeActiveTerminal",
 			"changes": [
 				{
 					"at": "1.29.0",
@@ -14855,6 +15467,15 @@
 			]
 		},
 		{
+			"path": "'vscode'.env.clipboard",
+			"changes": [
+				{
+					"at": "1.30.0",
+					"kind": 0
+				}
+			]
+		},
+		{
 			"path": "'vscode'.languages.registerDeclarationProvider",
 			"changes": [
 				{
@@ -15133,6 +15754,15 @@
 			]
 		},
 		{
+			"path": "'vscode'.extensions.onDidChange",
+			"changes": [
+				{
+					"at": "1.31.0",
+					"kind": 0
+				}
+			]
+		},
+		{
 			"path": "'vscode'.TerminalOptions.strictEnv",
 			"changes": [
 				{
@@ -15227,6 +15857,15 @@
 			"changes": [
 				{
 					"at": "1.33.0",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.env.uriScheme",
+			"changes": [
+				{
+					"at": "1.34.0",
 					"kind": 0
 				}
 			]
@@ -15664,6 +16303,15 @@
 			]
 		},
 		{
+			"path": "'vscode'.env.remoteName",
+			"changes": [
+				{
+					"at": "1.36.0",
+					"kind": 0
+				}
+			]
+		},
+		{
 			"path": "'vscode'.Extension.extensionKind",
 			"changes": [
 				{
@@ -15710,6 +16358,15 @@
 		},
 		{
 			"path": "'vscode'.DiagnosticTag.Deprecated",
+			"changes": [
+				{
+					"at": "1.37.0",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.env.shell",
 			"changes": [
 				{
 					"at": "1.37.0",
@@ -15791,6 +16448,24 @@
 		},
 		{
 			"path": "'vscode'.FileSystem.writeFile",
+			"changes": [
+				{
+					"at": "1.37.0",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.workspace.fs",
+			"changes": [
+				{
+					"at": "1.37.0",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.workspace.workspaceFile",
 			"changes": [
 				{
 					"at": "1.37.0",
@@ -16298,6 +16973,15 @@
 			]
 		},
 		{
+			"path": "'vscode'.env.uiKind",
+			"changes": [
+				{
+					"at": "1.40.0",
+					"kind": 0
+				}
+			]
+		},
+		{
 			"path": "'vscode'.languages.registerCallHierarchyProvider",
 			"changes": [
 				{
@@ -16506,6 +17190,60 @@
 		},
 		{
 			"path": "'vscode'.TreeView.title",
+			"changes": [
+				{
+					"at": "1.41.0",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.workspace.onDidCreateFiles",
+			"changes": [
+				{
+					"at": "1.41.0",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.workspace.onDidDeleteFiles",
+			"changes": [
+				{
+					"at": "1.41.0",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.workspace.onDidRenameFiles",
+			"changes": [
+				{
+					"at": "1.41.0",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.workspace.onWillCreateFiles",
+			"changes": [
+				{
+					"at": "1.41.0",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.workspace.onWillDeleteFiles",
+			"changes": [
+				{
+					"at": "1.41.0",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.workspace.onWillRenameFiles",
 			"changes": [
 				{
 					"at": "1.41.0",
@@ -17171,6 +17909,24 @@
 			]
 		},
 		{
+			"path": "'vscode'.window.activeColorTheme",
+			"changes": [
+				{
+					"at": "1.45.0",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.window.onDidChangeActiveColorTheme",
+			"changes": [
+				{
+					"at": "1.45.0",
+					"kind": 0
+				}
+			]
+		},
+		{
 			"path": "'vscode'.CommentController.options",
 			"changes": [
 				{
@@ -17766,6 +18522,15 @@
 		},
 		{
 			"path": "'vscode'.authentication.getSession",
+			"changes": [
+				{
+					"at": "1.48.0",
+					"kind": 0
+				}
+			]
+		},
+		{
+			"path": "'vscode'.authentication.onDidChangeSessions",
 			"changes": [
 				{
 					"at": "1.48.0",
